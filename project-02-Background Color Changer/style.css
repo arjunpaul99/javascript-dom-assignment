@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;         
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background: rgb(179, 54, 54);
+
+}
+
+#random-color{
+    padding: 10px 20px;
+}
+
+.container{
+    width: 500px;
+    border: 2px solid red;
+    margin: 20px auto;
+    padding: 20px;
+
+    display: flex;
+    align-items: flex-start
+;
+}
