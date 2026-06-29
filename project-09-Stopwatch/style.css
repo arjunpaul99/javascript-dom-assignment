@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#1d3557;
+}
+
+.container{
+    width:500px;
+    height: 500px;
+    background:white;
+    padding:153px 10px 10px 19px;
+    text-align:center;
+    border-radius: 50%;
+ 
+}
+
+h1{
+    margin-bottom:20px;
+}
+
+h2{
+    font-size:50px;
+    margin-bottom:30px;
+}
+
+button{
+    padding:12px 22px;
+    margin:5px;
+    font-size:18px;
+}
