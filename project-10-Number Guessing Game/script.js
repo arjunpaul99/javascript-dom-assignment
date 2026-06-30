@@ -1,5 +1,4 @@
-// Random number (1-50)
-const randomNumber = Math.floor(Math.random() * 50);
+const randomNumber = Math.floor(Math.random() * 100);
 console.log(randomNumber);
 
 const guessInput = document.querySelector("#guess");
@@ -10,10 +9,10 @@ checkBtn.addEventListener("click", () => {
 
     const userGuess = Number(guessInput.value);
     if(userGuess === randomNumber){
-        message.textContent = "🎉 Congratulations! You guessed correctly.";
+        message.textContent = " Congratulations! You guessed correctly.";
     }else if(userGuess < randomNumber){
-        message.textContent = "Too Low! Try Again.";
+        message.textContent = "Too Low!";
     }else{
-        message.textContent = "Too High! Try Again.";
+        message.textContent = "Too High!";
     }
 });

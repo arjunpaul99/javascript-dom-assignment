@@ -1,4 +1,4 @@
-const btn = document.querySelector("#resultBtn");
+const btn = document.querySelector("#btn");
 const result = document.querySelector("#result");
 
 btn.addEventListener("click", () => {
@@ -6,17 +6,9 @@ btn.addEventListener("click", () => {
     const bangla = Number(document.querySelector("#bangla").value);
     const english = Number(document.querySelector("#english").value);
     const math = Number(document.querySelector("#math").value);
-    const science = Number(document.querySelector("#science").value);
-    const ict = Number(document.querySelector("#ict").value);
 
-
-    if ( bangla < 33 || english < 33 || math < 33 || science < 33 || ict < 33 ) {
-        result.innerHTML = `Total : Failed <br> Grade : F `;
-        return;
-    }
-
-    const total = bangla + english + math + science + ict;
-    const average = total / 5;
+    const total = bangla + english + math;
+    const average = total / 3;
 
     let grade = "";
 
@@ -36,7 +28,10 @@ btn.addEventListener("click", () => {
         grade = "F";
     }
 
-    result.innerHTML = ` Total Marks : ${total} <br> Average : ${average.toFixed(2)} <br>
-    Grade : ${grade} <br> Result : Pass`;
+    result.innerHTML = `
+        Total: ${total} <br>
+        Average: ${average.toFixed(2)} <br>
+        Grade: ${grade}
+    `;
 
 });
